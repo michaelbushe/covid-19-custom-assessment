@@ -1,6 +1,7 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing'
 
 import { WelcomePageComponent } from './welcome-page.component'
+import {RouterTestingModule} from '@angular/router/testing'
 
 describe('WelcomePageComponent', () => {
   let component: WelcomePageComponent
@@ -8,6 +9,7 @@ describe('WelcomePageComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
+      imports: [        RouterTestingModule.withRoutes(['/welcome'])],
       declarations: [ WelcomePageComponent ]
     })
     .compileComponents()
