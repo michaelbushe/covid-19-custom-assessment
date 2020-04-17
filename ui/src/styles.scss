@@ -1,0 +1,17 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+  /* https://img.freepik.com/free-vector/coronavirus-2019-ncov-virus-background-with-disease-cells-covid-19-corona-virus-outbreaking-pandemic-medical-health-risk-concept_139523-181.jpg?size=626&ext=jpg */
+  background-image: url("/assets/image/coronavirus-2019-ncov-virus-background-with-disease-cells-covid-19-corona-virus-outbreaking-pandemic-medical-health-risk-concept_139523-181.jpg");
+  background-size:cover;
+  width: 100vh;
+  height: 100vw;
+}
+
+.page {
+
+}
+
+.page-content {
+  background-color: white;
+  margin: 20px;
+}
