@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core'
+
 import { Router } from '@angular/router'
 
 @Component({
@@ -26,7 +27,7 @@ import { Router } from '@angular/router'
     This app is not endorse by the CDC nor the United States Government.
     </p>
 
-    <p-button label="Start Assessment" (onClick)="handleStart($event)"></p-button>
+    <p-button label="Start Assessment" (onClick)="handleStart($event)" data-test-id="start-assessment-button"></p-button>
     </div>
     `,
   styles: [
