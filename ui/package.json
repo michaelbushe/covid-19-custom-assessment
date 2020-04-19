@@ -5,11 +5,12 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
-    "test": "ng test",
+    "test": "ng test && cypress run",
     "lint": "ng lint",
     "e2e": "ng e2e",
     "gitcommit": "git add package.json && git-cz && npm version patch  -m \"Version upgraded to %s\"",
-    "cypress:open": "cypress open"
+    "cypress:open": "cypress open",
+    "cy:run": "cypress run"
   },
   "private": true,
   "dependencies": {
