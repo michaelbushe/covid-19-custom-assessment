@@ -17,8 +17,11 @@
       "prefix": "c19",
       "architect": {
         "build": {
-          "builder": "@angular-devkit/build-angular:browser",
+          "builder": "@angular-builders/custom-webpack:browser",
           "options": {
+          	"customWebpackConfig": {
+          		"path": "./webpack.config.dev.js"
+          	}, 
             "outputPath": "dist/covid19",
             "index": "src/index.html",
             "main": "src/main.ts",
@@ -33,7 +36,7 @@
               "node_modules/primeng/resources/themes/nova-light/theme.css",
               "node_modules/primeng/resources/primeng.min.css",
               "node_modules/primeicons/primeicons.css",
-              "src/styles.scss",
+              "src/styles.scss"
             ],
             "scripts": []
           },
@@ -69,8 +72,11 @@
           }
         },
         "serve": {
-          "builder": "@angular-devkit/build-angular:dev-server",
+          "builder": "@angular-builders/custom-webpack:dev-server",
           "options": {
+          	"customWebpackConfig": {
+          		"path": "./webpack.config.dev.js"
+          	},
             "browserTarget": "covid19:build"
           },
           "configurations": {
