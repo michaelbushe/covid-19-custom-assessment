@@ -5,9 +5,9 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
-    "test": "ng test && cypress run",
+    "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e",
+    "e2e": "cypress run",
     "gitcommit": "git add package.json && git-cz && npm version patch  -m \"Version upgraded to %s\"",
     "cypress:open": "cypress open",
     "cy:run": "cypress run"
