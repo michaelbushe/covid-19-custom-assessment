@@ -9,7 +9,7 @@ describe('WelcomePageComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      imports: [        RouterTestingModule.withRoutes(['/welcome'])],
+      imports: [ RouterTestingModule.withRoutes(['/welcome'])],
       declarations: [ WelcomePageComponent ]
     })
     .compileComponents()

@@ -17,7 +17,7 @@ import { Router } from '@angular/router'
 	    	<p>This tool is not a doctor and does not provide a diagnosis. You should always speak 
 				with a doctor regarding any medical condition.</p><br/>
 	    	<p>This application is not endorsed by the CDC nor the United States Government.</p>
-		    <button class="btn" label="Start Assessment" (onClick)="handleStart($event)">Start Assessment</button>
+		    <button p-button class="btn" label="Start Assessment" (click)="handleStart($event)">Start Assessment</button>
 			</div>
     </div>
 		</div>
@@ -34,6 +34,6 @@ export class WelcomePageComponent implements OnInit {
 	}
 
 	handleStart($event: any) {
-		this.router.navigateByUrl('/assess/page-1')
+		this.router.navigateByUrl('/setup')
 	}
 }

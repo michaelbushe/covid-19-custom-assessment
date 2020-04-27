@@ -19,6 +19,7 @@
   transition: 200ms;
   @apply mt-10;
   float: right;
+  @apply ml-5;
 }
 
 .btn:hover {
@@ -37,4 +38,27 @@
 	@apply border-4;
 	border-color: #0c687f;
 	margin: 0 auto;
+}
+
+.setup-content {
+	@apply max-w-md;
+	@apply rounded-lg;
+	@apply p-4;
+	@apply border-solid;
+	@apply border-4;
+	border-color: #0c687f;
+	margin: 0 auto;
+}
+
+.comorbidities {
+	@apply my-5;
+	@apply mx-5;
+	@apply block;
+	@apply text-gray-500;
+	@apply font-bold;
+	@apply leading-tight;
+}
+
+.comorbidities label {
+	@apply text-sm;
 }
